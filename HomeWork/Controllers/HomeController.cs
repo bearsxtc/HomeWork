@@ -19,12 +19,13 @@ namespace HomeWork.Controllers
             {
                 int price = Convert.ToInt32(rand.Next(0, 50000));
                 int typeNumber = Convert.ToInt16(rand.Next(0, 2));
+                int dateCount = Convert.ToInt16(rand.Next(0, 365));
 
                 viewModel = new DataViewModel() 
                 {
                     Number = i + 1,
                     Category = (typeNumber == 0) ? "支出" : "收入",
-                    DateTime = DateTime.Now,
+                    DateTime = DateTime.Now.AddDays(-dateCount),
                     Price = price
                 };
                 ListViewModel.Add(viewModel);
