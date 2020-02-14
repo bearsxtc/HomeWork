@@ -7,7 +7,6 @@ namespace HomeWork.ViewModels
 {
     public class DataViewModel
     {
-        //public IEnumerable<>
         public int Number { get; set; }
         public string Category { get; set; }
         public DateTime DateTime { get; set; }
