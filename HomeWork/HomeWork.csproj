@@ -128,16 +128,17 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountBookController.cs" />
+    <Compile Include="Controllers\AccountBooks2Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountBook.cs" />
-    <Compile Include="Models\DataModel.cs" />
     <Compile Include="Models\ModelTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service\DataListAPI.cs" />
-    <Compile Include="ViewModels\DataViewModel.cs" />
+    <Compile Include="Service\AccountBookAPI.cs" />
+    <Compile Include="ViewModels\AccountBookViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\HomeworkDB.mdf" />
@@ -179,7 +180,12 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\DataList.cshtml" />
+    <Content Include="Views\AccountBook\AccountBookList.cshtml" />
+    <Content Include="Views\AccountBooks2\Create.cshtml" />
+    <Content Include="Views\AccountBooks2\Delete.cshtml" />
+    <Content Include="Views\AccountBooks2\Details.cshtml" />
+    <Content Include="Views\AccountBooks2\Edit.cshtml" />
+    <Content Include="Views\AccountBooks2\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
